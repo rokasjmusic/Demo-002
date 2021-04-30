@@ -1,3 +1,7 @@
+.body {
+    max-width: 1920px;
+}
+
 .clearfix {
     overflow: auto;
 }
@@ -8,7 +12,7 @@
 }
 
 h1 {
-    height: 48px;
+    font-size: 48px;
     color: yellow;
 }
 
@@ -20,6 +24,11 @@ h1 {
 p {
     font-size: 12px;
     color: darkgrey;
+}
+
+img {
+    width: 500px;
+    height: 300px;
 }
 
 .first-row {
