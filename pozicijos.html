@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pozicijos</title>
+</head>
+    <style>
+
+        /* .container {
+            width: 100%;
+            position: relative;
+            background-color: silver;
+        } */
+
+        .container-1 {
+            width: 100%;
+            height: 300px;
+            background-color: blue;
+         }
+
+        .textblock {
+            height: 600px;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        .bottom {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 50px;
+        }
+
+        .big-container {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+        }
+
+        .big-container-1 {
+            width: 100%;
+            background-color: gold;
+        }
+
+        .kvadratelis {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .header, .main, .footer {
+            float: left;
+            width: 100%;
+        }
+
+        .header {
+            background-color: honeydew;
+            height: 200px;
+            position: fixed;
+        }
+
+        .main {
+            margin-top: 200px;
+            background-color: pink;
+            height: 1500px;
+        }
+
+        .footer {
+            background-color: khaki;
+            height: 200px;
+        }
+
+        body {
+            margin: 0 auto;
+        }
+
+        p {
+            text-align: center;
+            size: 24px;
+
+        }
+        
+    </style>
+
+<body>
+
+    <!-- <div class='big-container'>
+        <div class='container clearfix'>
+            <div class='textblock'>
+                <div class='antraste'>Antraste</div>
+                <div class='tekstas'>tekstas tekstas tekstas tekstas tekstas tekstas tekstas</div>
+                <div class='tekstas bottom'>x</div>
+            </div>
+        </div>
+        <div class='container-1'>
+            Antras konteineris
+        </div>
+    </div>  -->
+    
+
+    <!-- centravimas su absolute -->
+    <!-- <div class='big-container-1'>
+        <div class='kvadratelis'></div>
+    </div> -->
+
+    <div class='container'>
+        <div class='header'></div>
+        <div class='main'>
+            <p>headeris</p>
+        </div>
+        <div class="footer">
+            <p>&#169 Vardas Pavarde</p>
+            <p class='year'>2021</p>
+            <!-- <p class='year'>
+                <!-- <script>
+                    document.write(new Date().getFULLYear())
+                </script> -->
+            <!-- </p> --> -->
+        </div> 
+    </div>
+
+    <!-- niveikia datos formatavimas -->
+<!-- <script>
+    document.querySelector('.year').innertext = new Date().get.FULLYear();
+</script> -->
+
+</body>
+</html>
