@@ -1,0 +1,67 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex-item-1 {
+    width: 100%;
+    background-color: silver;
+}
+
+.flex-item-2, .flex-item-3 {
+    width: 50%;
+}
+
+.flex-item-2 {
+    background-color: thistle;
+}
+
+.flex-item-3 {
+    background-color: red; 
+}
+
+.flex-item-4 {
+    width:70%;
+    background-color: teal;
+}
+
+.flex-item-5 {
+    width:30%;
+    background-color: yellowgreen;
+}
+
+.flex-item-6, .flex-item-7, .flex-item-8 {
+    width: 33.33%
+}
+
+p {
+    color: orange;
+    font-size: 28px;
+    /* text-align: center; */
+}
+
+[class*="flex-item"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: 720px) {
+    
+    .flex-container {
+        
+        flex-flow: column wrap;
+        /* flex-wrap: wrap;
+        flex-direction: column; */
+    }
+
+    [class*="flex-item"]{
+            width: 100%;
+        }
+
+        .flex-item-1 {
+            order: 1;
+        }
+
+}

@@ -102,16 +102,43 @@
         }
 
         .navbar > .toggle > .icon:before {
-            top: 22px;
+            top: -8px;
         }
 
         .navbar > .toggle > .icon:after {
-            top: 40px;
+            top: 8px;
+        }
+
+        .navbar > .toggle > .icon {
+            /* display: none; */
+            position: relative;
+            margin-top: 8px;
+            margin-bottom: 8px;
         }
 
         .navbar > .toggle {
-            display: none;
-            position: relative;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 22px;
+        }
+
+        @media all and (max-width: 786px) {
+            .area {
+                flex-direction: column;
+            }
+            
+            .navbar > .list {
+                flex-direction: column;
+            }
+
+            .navbar > .list > .item {
+                width: 100%;
+            }
+
+            .navbar > .toggle {
+                display: block;
+            }
         }
 
     </style>
@@ -142,5 +169,24 @@
 
             </div>
         </div>
+
+        <div class='main'>
+            <span class='dinaminis'>Tekstas</span>       
+            <span class='dinaminis1'>Tekstas</span>
+        </div>
+
+        <script>
+
+            var suma, sk1, sk2;
+            suma = 0;
+            ska1 = 8;
+            sk2 = 10;
+
+            suma = sk1 + sk2;
+
+            document.querySelector('.dinaminis').innertext = 'suma';
+            document.querySelector('.dinaminis1').innertext = 'Pakeistas tekstas';
+        </script>
+    
     </div>
 </html>
