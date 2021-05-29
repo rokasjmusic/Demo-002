@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pozicijos</title>
-</head>
+
     <style>
 
         /* .container {
@@ -90,6 +90,9 @@
         
     </style>
 
+</head>
+    
+
 <body>
 
     <!-- <div class='big-container'>
@@ -118,19 +121,23 @@
         </div>
         <div class="footer">
             <p>&#169 Vardas Pavarde</p>
-            <p class='year'>2021</p>
+            <p class='year'></p>
             <!-- <p class='year'>
-                <!-- <script>
+                <script>
                     document.write(new Date().getFULLYear())
                 </script> -->
-            <!-- </p> --> -->
+            <!-- </p> -->
         </div> 
     </div>
 
-    <!-- niveikia datos formatavimas -->
-<!-- <script>
-    document.querySelector('.year').innertext = new Date().get.FULLYear();
-</script> -->
+    <!-- <script>
+        document.querySelector('.year').innerText = 'Test';
+    </script> -->
+
+    <script>
+        document.querySelector('.year').innerText = new Date().getFullYear();
+    </script>
+
 
 </body>
 </html>
